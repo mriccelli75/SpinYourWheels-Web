@@ -1,0 +1,62 @@
+/*
+Table Of Contents
+
+# BRANDING
+  primary branding colors: 
+  white: #fefefe
+  royal blue: #0a145a
+  black: #000000
+  indigo blue: #091b88
+  soap: #d2d8f5
+
+# TYPOGRAPHY
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+# LAYOUT
+
+*/
+
+/*
+* ==========================================================
+*     BRANDING 
+* ==========================================================
+*/
+:root {
+  /*colors*/
+  --sw-white: #fefefe;
+  --sw-royalblue: #0a145a;
+  --sw-black: #231d1f;
+  --sw-grey: #434242;
+  --sw-indigoblue: #091b88;
+  --sw-soap: #d2d8f5;
+
+  /*typography*/
+  --sw-heading: font-family: 'Roboto', sans-serif;
+  --sw-body: font-family: 'Open Sans', sans-serif;
+}
+
+/*
+* ==========================================================
+*     TYPOGRAPHY 
+* ==========================================================
+*/
+body {
+  font-family: var(--sw-body);
+  background: #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--sw-heading);
+  color: var(--sw-black);
+}
+
+p {
+  color: var(--sw-grey);
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+/*
+* ==========================================================
+*     LAYOUT
+* ==========================================================
+*/
