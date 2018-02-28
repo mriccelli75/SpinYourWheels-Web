@@ -12,6 +12,10 @@ Table Of Contents
 # TYPOGRAPHY
   font-family: 'Roboto', sans-serif;
   font-family: 'Open Sans', sans-serif;
+  font-family: 'Merriweather', serif;
+
+  
+
 # LAYOUT
 
 */
@@ -30,9 +34,13 @@ Table Of Contents
   --sw-indigoblue: #091b88;
   --sw-soap: #d2d8f5;
 
+  /*Secondary Colors*/
+  --sw-gold: #ffd700;
+
   /*typography*/
   --sw-heading: font-family: 'Roboto', sans-serif;
   --sw-body: font-family: 'Open Sans', sans-serif;
+  --sw-serif: font-family: 'Merriweather', serif;
 }
 
 /*
@@ -46,17 +54,263 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--sw-heading);
-  color: var(--sw-black);
+  font-weight: 700;
+  color: var(--sw-royalblue);
+  /* color: #0a145a; */
+}
+
+h1, h2  {
+  color: white;
 }
 
 p {
   color: var(--sw-grey);
+  /* color: #434242; */
   font-size: 1rem;
-  line-height: 1.9;
+  line-height: 1.5;
 }
+a:link, a:visited {
+  color: var(--sw-soap);
+  /* color: #091b88; */
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--sw-indigoblue);
 
+}
+a.navbar-brand {
+  font-family: var(--sw-heading);
+  color: var(--sw-royalblue);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+a.nav-link {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--sw-royalblue);
+}
+#navbarResponsive > ul > li:last-child {
+  margin-right: 1rem;
+}
+sup {
+  vertical-align:middle;
+  font-size: smaller;
+}
 /*
 * ==========================================================
 *     LAYOUT
 * ==========================================================
 */
+section {
+  padding: 85px 0;
+}
+img {
+  max-width: 100%;
+}
+header.masthead {
+  text-align: center;
+  color: white;
+  background-image: url("../img/spin-your-wheels-hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header.masthead .intro-text {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+header.masthead .intro-text .intro-lead-in {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 22px;
+  margin-bottom: 25px;
+  font-family: 'Merriweather', serif;
+}
+
+header.masthead .intro-text .intro-heading {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+  header.masthead .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+  header.masthead .intro-text .intro-lead-in {
+    font-size: 40px;
+    font-style: italic;
+    line-height: 40px;
+    margin-bottom: 25px;
+    font-family: 'Merriweather', serif;
+  }
+  header.masthead .intro-text .intro-heading {
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+}
+
+@media (min-width: 992px){
+#mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top .3s,padding-bottom .3s;
+    -moz-transition: padding-top .3s,padding-bottom .3s;
+    transition: padding-top .3s,padding-bottom .3s;
+    border: none;
+    background-color: transparent;
+}
+}
+section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: var(--sw-royalblue);
+}
+
+section h3.section-subheading {
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: 'Merriweather', serif;
+  line-height: 1.5;
+}
+
+h4.story-heading {
+  text-transform: uppercase;
+}
+/*
+* ==========================================================
+*     FORMS
+* ==========================================================
+*/
+
+#form-box {
+  background-color: var(--sw-soap);
+  padding: 35px;
+}
+.form-check-label {
+  margin-bottom: 30px;
+}
+label {
+  color: white;
+}
+.form-control {
+  border-radius: 0;
+  border: none;
+}
+.form-text {
+  color: var(--sw-royalblue);
+}
+
+
+/* buttons */
+.btn {
+  border-radius: 0px;
+}
+.btn-primary {
+  color: #fff;
+  background-color: var(--sw-royalblue);
+  border-color: var(--sw-royalblue);
+  font-family: var(--sw-heading);
+  text-transform: uppercase;
+  
+}
+.btn-primary:hover {
+  background-color: #091b88;
+  border-color: #091b88;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle {
+  background-color: var(--sw-indigoblue);
+  border-color: var(--sw-indigoblue);
+}
+
+.btn-secondary {
+  color: #0a145a;
+  background-color: var(--sw-soap);
+  border-color: var(--sw-soap);
+}
+.btn-secondary:hover {
+  color: #0a145a;
+  background-color: var(--sw-soap);
+  border-color: var(--sw-soap);
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, 
+.btn-secondary:not(:disabled):not(.disabled):active, 
+.show>.btn-secondary.dropdown-toggle {
+  color: #0a145a;
+  background-color: #c9cde2;
+  border-color: #c9cde2;
+}
+.btn-success {
+  color: #fff;
+  background-color: #ffd700;
+  border-color: #ffd700;
+}
+.btn-success:hover {
+  color: #fff;
+  background-color: #ffae00;
+  border-color: #ffae00;
+}
+
+.btn-success:not(:disabled):not(.disabled).active, 
+.btn-success:not(:disabled):not(.disabled):active, 
+.show>.btn-success.dropdown-toggle {
+  color: #fff;
+  background-color: #ffae00;
+  border-color: #ffae00;
+}
+
+.btn-xl {
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+a.btn.btn-primary.donate-btn {
+  padding-left: 20px;
+  padding-right: 25px;
+  /* border-radius: 10px; */
+}
+
+i.fa.fa-heart {
+  font-size: .75rem;
+  vertical-align: middle;
+}
+
+div.image-container {
+  border: 10px solid #d2d8f5;
+  height: auto;
+  margin-top: -15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.event-description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 180, 0, 0.83);
+  text-align: center;
+  padding: 20px 0px 10px;
+  }
+ 
+  
