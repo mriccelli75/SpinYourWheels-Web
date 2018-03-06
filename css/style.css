@@ -31,6 +31,7 @@ Table Of Contents
   --sw-royalblue: #0a145a;
   --sw-black: #231d1f;
   --sw-grey: #434242;
+  --sw-lightgrey:#B0B0B0;
   --sw-indigoblue: #091b88;
   --sw-soap: #d2d8f5;
 
@@ -62,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 header h1, 
 header h2,
 section#get-involved h2 {
-  color: white;
+  color: var(--sw-white);
 }
 
 p {
@@ -197,10 +198,55 @@ section h3.section-subheading {
   text-transform: none;
   font-family: 'Merriweather', serif;
   line-height: 1.5;
+  color: var(--sw-soap);
 }
 
 h4.story-heading {
   text-transform: uppercase;
+}
+
+#get-involved .crowdrise h4,
+#get-involved .register h4 {
+  color: var(--sw-white);
+  text-transform: uppercase;
+}
+.crowdrise {
+  margin-bottom: 55px;
+}
+.crowdrise h5 {
+  color: var(--sw-soap);
+  text-align: center;
+  font-size: .85rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.cta-funds {
+  border: 10px solid var(--sw-soap);
+}
+
+.cta-subtext {
+  font-size: 14px;
+  opacity: 0.64;
+  margin-bottom: 26px;
+}
+.cta-raised {
+  margin-bottom: 10px;
+}
+
+.cta-funds .progress {
+  margin-bottom: 9px;
+  border-radius: 100px;
+  height: 10px;
+}
+h3.inline.goal {
+  display: inline;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+h2.inline.raised {
+  display: inline;
+  font-size: 32px;
 }
 /*
 * ==========================================================
@@ -237,7 +283,9 @@ label {
   border-color: var(--sw-royalblue);
   font-family: var(--sw-heading);
   text-transform: uppercase;
-  
+  /* padding: 15px;
+  font-size: 1.25rem;
+  border-radius: 10px; */
 }
 .btn-primary:hover {
   background-color: #091b88;
@@ -294,16 +342,23 @@ label {
 }
 
 a.btn.btn-primary.donate-btn {
-  padding-left: 20px;
+  padding-left: 18px;
   padding-right: 25px;
-  /* border-radius: 10px; */
+  border-radius: 8px;
+}
+a#donate-now {
+  padding: 15px;
+  border-radius: 5px;
 }
 
 i.fa.fa-heart {
   font-size: .75rem;
   vertical-align: middle;
+  transition: 0.15s all ease;
 }
-
+a.btn.btn-primary.donate-btn:hover i.fa.fa-heart{
+  padding-right: 5px;
+}
 div.image-container {
   border: 15px solid #d2d8f5;
   height: auto;
@@ -328,7 +383,12 @@ div.image-container {
 } 
 
 section#get-involved {
-  background: var(--sw-royalblue);
+  /* background: var(--sw-royalblue); */
+  background: url(../img/cta-bg-1.jpg);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .get-involved-item .icon {
@@ -336,5 +396,24 @@ section#get-involved {
   margin-bottom: 25px;
 }
 
+.register-heading h2 span {
+  display: block;
+  font-size: 16px;
+  color: #939393;
+}
 
-  
+.register {
+  text-align: center;
+}
+
+.register h5 {
+  color: var(--sw-soap);
+  text-align: center;
+  font-size: .85rem;
+  font-weight: 400;
+  text-transform: uppercase;
+} 
+
+.event {
+  border: 10px solid var(--sw-soap);
+}
