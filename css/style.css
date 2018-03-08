@@ -417,3 +417,8 @@ section#get-involved {
 .event {
   border: 10px solid var(--sw-soap);
 }
+
+.cite p {
+  color: lightgrey;
+  font-size: .95rem;
+}
