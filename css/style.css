@@ -49,6 +49,10 @@ Table Of Contents
 *     TYPOGRAPHY 
 * ==========================================================
 */
+
+html, body {
+  overflow-x: hidden;
+}
 body {
   font-family: var(--sw-body);
   background: #fff;
@@ -68,7 +72,6 @@ section#get-involved h2 {
 
 p {
   color: var(--sw-grey);
-
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -171,7 +174,7 @@ section {
 }
 section#the-story {
   padding: 85px 0;
-  background: url(../img/4877-01_Riding4Handicapped_2017-01.png);
+  background: url('../img/4877-01_Riding4Handicapped_2017-01.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 32px;
@@ -182,7 +185,7 @@ img {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/spin-your-wheels-hero-bg.jpg");
+  background-image: url("../img/cropped-hero.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -236,13 +239,13 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 992px){
 #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
     -webkit-transition: padding-top .3s,padding-bottom .3s;
     -moz-transition: padding-top .3s,padding-bottom .3s;
     transition: padding-top .3s,padding-bottom .3s;
     border: none;
-    background-color: transparent;
+     
 }
 }
 section h2.section-heading {
@@ -483,4 +486,110 @@ section#get-involved {
 .cite p {
   color: lightgrey;
   font-size: .95rem;
+}
+
+@media (max-width: 991px) { 
+  #in-the-press .col-lg-6.order-last {
+    -webkit-box-ordinal-group: -1;
+     -ms-flex-order: -1;
+     order: -1;
+  }
+  div.image-container {
+    max-width: 80%;
+    margin: auto;
+  }
+ }
+
+ section#social-media {
+  /* background: var(--sw-royalblue); */
+  background: url('../img/cta-bg-2.jpg');
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+   
+}
+section#social-media h2 {
+  color: var(--sw-white);
+  
+}
+
+section#social-media h3.section-subheading {
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: 'Merriweather', serif;
+  line-height: 1.5;
+  color: var(--sw-soap);
+}
+.footer { 
+  width: 100%;
+    height: auto;
+    line-height: 60px;
+    background-color: var(--sw-royalblue);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer p {
+  color: white;
+}
+ul {
+  list-style-type: none;
+}
+.footer-social-icons {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.footer-social-icons li {
+  padding: 0px;
+  margin: 0px;
+  display: inline-block;
+}
+.footer-social-icons.round li a {
+  border-radius: 100%;
+}
+
+.footer-social-icons li a {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  display: inline-block;
+  padding: 0px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.footer-social-icons li a:hover, .footer-social-icons li a.active {
+  color: #999;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px){
+
+  .mission {
+    margin-top: 25px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  } 
+  .footer-social-icons {
+    text-align: center;
+
+  }
+
+  .footer p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:462px){
+  section h2.section-heading {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    
+  }
 }
