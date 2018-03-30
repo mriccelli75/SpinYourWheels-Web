@@ -163,6 +163,26 @@ button.navbar-toggler {
     transform: rotate(-135deg);
     opacity: 0.9;
 }
+
+@media (max-width:470px){
+  a.navbar-brand {
+    font-size: 1rem;
+  }
+
+  a.navbar-brand sup {
+    vertical-align: sub;
+  }
+}
+
+@media (max-width:385px){
+  a.navbar-brand {
+    font-size: .85rem;
+  }
+
+  a.navbar-brand sup {
+    vertical-align: sub;
+  }
+}
 /*
 * ==========================================================
 *     LAYOUT
