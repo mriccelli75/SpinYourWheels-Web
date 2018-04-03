@@ -163,6 +163,26 @@ button.navbar-toggler {
     transform: rotate(-135deg);
     opacity: 0.9;
 }
+
+@media (max-width:470px){
+  a.navbar-brand {
+    font-size: 1rem;
+  }
+
+  a.navbar-brand sup {
+    vertical-align: sub;
+  }
+}
+
+@media (max-width:385px){
+  a.navbar-brand {
+    font-size: .85rem;
+  }
+
+  a.navbar-brand sup {
+    vertical-align: sub;
+  }
+}
 /*
 * ==========================================================
 *     LAYOUT
@@ -259,11 +279,13 @@ section h3.section-subheading {
   font-size: 24px;
   font-weight: 400;
   font-style: italic;
-  margin-bottom: 75px;
   text-transform: none;
   font-family: 'Merriweather', serif;
   line-height: 1.5;
   color: var(--sw-soap);
+  max-width: 930px;
+  margin: auto;
+  margin-bottom: 75px;
 }
 
 h4.story-heading {
@@ -593,3 +615,11 @@ ul {
     
   }
 }
+
+@media screen and (max-width:345px){
+  #brand-title {
+    display: none;
+    
+  }
+}
+
