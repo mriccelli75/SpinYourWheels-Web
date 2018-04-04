@@ -237,6 +237,16 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width: 768px) {
+  header.masthead {
+    background-image: url("../img/cropped-hero-sm.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
   header.masthead .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
@@ -256,6 +266,7 @@ header.masthead .intro-text .intro-heading {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 }
+
 
 @media (min-width: 992px){
 #mainNav {
@@ -591,7 +602,14 @@ ul {
 }
 
 @media screen and (max-width: 768px){
-
+  section#get-involved {
+    /* background: var(--sw-royalblue); */
+    background: url('../img/cta-bg-1-sm.jpg');
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
   .mission {
     margin-top: 25px;
     padding-left: 2rem;
