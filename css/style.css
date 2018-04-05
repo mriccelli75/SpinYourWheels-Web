@@ -540,6 +540,7 @@ section#get-involved {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  border: 10px solid red;
    
 }
 section#social-media h2 {
@@ -549,6 +550,17 @@ section#social-media h2 {
 
 section#social-media h3.section-subheading {
   font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 35px;
+  text-transform: none;
+  font-family: 'Merriweather', serif;
+  line-height: 1.5;
+  color: var(--sw-soap);
+}
+
+h4.section-subheading {
+  font-size: 20px;
   font-weight: 400;
   font-style: italic;
   margin-bottom: 75px;
@@ -601,14 +613,24 @@ ul {
   background-color: #fff;
 }
 
-@media screen and (max-width: 768px){
-  section#get-involved {
+@media (max-width: 768px){
+  .section#get-involved {
     /* background: var(--sw-royalblue); */
     background: url('../img/cta-bg-1-sm.jpg');
     background-position-x: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+  }
+
+  .section#social-media {
+    /* background: var(--sw-royalblue); */
+    background: url('../img/cta-bg-2-sm.jpg');
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+     
   }
   .mission {
     margin-top: 25px;
@@ -617,9 +639,7 @@ ul {
   } 
   .footer-social-icons {
     text-align: center;
-
   }
-
   .footer p {
     text-align: center;
   }
