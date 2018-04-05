@@ -240,7 +240,7 @@ header.masthead .intro-text .intro-heading {
   header.masthead {
     background-image: url("../img/cropped-hero-sm.jpg");
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -535,13 +535,11 @@ section#get-involved {
 
  section#social-media {
   /* background: var(--sw-royalblue); */
-  background: url('../img/cta-bg-2.jpg');
+  background: url('../img/cta-bg-2-sm.jpg');
   background-position-x: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  border: 10px solid red;
-   
 }
 section#social-media h2 {
   color: var(--sw-white);
@@ -614,7 +612,7 @@ ul {
 }
 
 @media (max-width: 768px){
-  .section#get-involved {
+  section#get-involved {
     /* background: var(--sw-royalblue); */
     background: url('../img/cta-bg-1-sm.jpg');
     background-position-x: center;
@@ -623,7 +621,7 @@ ul {
     background-size: cover;
   }
 
-  .section#social-media {
+  section#social-media {
     /* background: var(--sw-royalblue); */
     background: url('../img/cta-bg-2-sm.jpg');
     background-position-x: center;
@@ -631,6 +629,17 @@ ul {
     background-attachment: scroll;
     background-size: cover;
      
+  }
+
+  header.masthead {
+    background-image: url("../img/cropped-hero-sm.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
   .mission {
     margin-top: 25px;
