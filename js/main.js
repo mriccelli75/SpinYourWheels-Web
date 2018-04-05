@@ -35,3 +35,8 @@ $('a[href*="#"]')
       }
     }
   });
+
+// Bootstrap scrollspy
+$('body').scrollspy({target: '.navbar', offset: 10});
+
+
