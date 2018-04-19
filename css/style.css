@@ -458,12 +458,12 @@ a.btn.btn-primary.donate-btn:hover i.fa.fa-heart{
   padding-right: 5px;
 }
 div.image-container {
-  border: 15px solid #d2d8f5;
+  /* border: 15px solid #d2d8f5; */
   height: auto;
   margin-top: -15px;
   overflow: hidden;
   position: relative;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin-right: 25px;
 }
 
@@ -670,3 +670,6 @@ ul {
   }
 }
 
+.rounded-circle {
+  border: 15px solid #d2d8f5;
+}
