@@ -479,7 +479,15 @@ div.image-container {
 .mission {
   margin-top: 25px;
 } 
+#the-story blockquote {
+  padding: 1rem;
+  border-left: 4px solid var(--sw-soap);
+  margin-left: 1rem;
 
+}
+#the-story blockquote p {
+  font-style: italic;
+}
 section#get-involved {
   /* background: var(--sw-royalblue); */
   background: url(../img/cta-bg-1.jpg);
@@ -655,6 +663,7 @@ ul {
     padding-left: 2rem;
     padding-right: 2rem;
   } 
+ 
   .footer-social-icons {
     text-align: center;
   }
