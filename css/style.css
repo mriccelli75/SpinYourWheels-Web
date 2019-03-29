@@ -848,3 +848,8 @@ ul {
 .slick-arrow.slick-hidden {
   display: none;
 }
+
+section.customer-logos.slider.slick-initialized.slick-slider {
+  padding-top: 0;
+  padding-bottom: 0;
+}
