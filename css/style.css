@@ -83,7 +83,11 @@ a:hover {
   color: var(--sw-indigoblue);
 
 }
-
+#spin-logo {
+  width: 125px;
+  height: auto;
+  margin-left: 1rem;
+}
 a.navbar-brand {
   font-family: var(--sw-heading);
   color: var(--sw-royalblue);
