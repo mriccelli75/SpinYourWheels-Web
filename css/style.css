@@ -84,7 +84,7 @@ a:hover {
 
 }
 #spin-logo {
-  width: 125px;
+  width: 90px;
   height: auto;
   margin-left: 1rem;
 }
@@ -203,10 +203,10 @@ section {
 }
 section#the-story {
   padding: 85px 0;
-  background: url('../img/2019-logo-bkgrnd.jpg');
+  /* background: url('../img/2019-logo-bkgrnd.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 32px;
+  background-position-y: 32px; */
 }
 img {
   max-width: 100%;
