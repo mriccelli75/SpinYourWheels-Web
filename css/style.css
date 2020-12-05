@@ -355,6 +355,11 @@ h2.inline.raised {
   display: inline;
   font-size: 32px;
 }
+@media (max-width: 500px){
+  h2 {
+    font-size: 30px;
+  }
+}
 /*
 * ==========================================================
 *     FORMS
@@ -857,3 +862,8 @@ section.customer-logos.slider.slick-initialized.slick-slider {
   padding-top: 0;
   padding-bottom: 0;
 }
+div#map_canvas_175-176 {
+  margin-top: 1rem;
+  margin: 0 auto;
+}
+
